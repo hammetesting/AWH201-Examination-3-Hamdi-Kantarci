@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Länken till Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <title>Examination 3</title>
+  </head>
+  <!-- Början på body-elementet, jag har tilldelat klassen bg-light för bakgrundsfärgen. -->
+  <body class="bg-light">
+    <!-- Navbar börjar -->
+
+    <!-- Fixed-top gör att navbaren är fast på toppen av fönstret när man scrollar -->
+    <!-- shadow-sm ger en liten skugg effekt på navbaren -->
+    <nav class="navbar fixed-top shadow-sm">
+      <!-- Behållare -->
+      <div class="container-lg">
+        <!-- Länk till loggan som tar dig till första sidan. -->
+        <a class="navbar-brand" href="index.html">
+          <!-- Länk till loggan -->
+          <img src="/Images/logga.png" alt="logo" class="img-fluid logo-img" />
+        </a>
+
+        <!--Dropdown menyn börjar-->
+        <div class="dropdown dropdown-center">
+          <!-- Knapp för att öppna dropdown menyn -->
+          <!-- btn definierar en knapp, "btn-secondary" och "btn-dark" skapar stil för knappen -->
+          <button
+            class="btn btn-secondary dropdown-toggle btn-dark"
+            type="button"
+            data-bs-auto-close="outside"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <!-- Ikonen som visas på knappen, en så kallad hamburgarmeny från Font Awesome -->
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Lista som innehåller dom olika sidorna i dropdown-menyn -->
+          <ul class="dropdown-menu">
+            <!-- Ett alternativ för att navigera till startsidan -->
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <!-- Ett alternativ för att navigera till avsnittet "About" på startsidan -->
+            <li><a class="dropdown-item" href="index.html#about">About</a></li>
+
+            <!-- Undermeny eller dropdown-submenu som innehåller fler alternativ -->
+            <li class="dropdown-submenu">
+              <!-- En knapp som agerar rubrik för undermenyn -->
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                >More</a
+              >
+              <!-- Lista med sidor för undermenyn -->
+              <ul class="dropdown-menu">
+                <!-- Alternativ för tjänster -->
+                <li>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                </li>
+                <!-- Alternativ för portfölj -->
+                <li>
+                  <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                </li>
+                <!-- Alternativ kontakt -->
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--Dropdown menyn slutar-->
+      </div>
+    </nav>
+
+    <!--Navbar slutar-->
+
+    <!-- Home-sektionen börjar här -->
+    <section class="home" id="home">
+      <!--behållare-->
+      <div class="container-lg">
+        <!--  rad för att anpassa innehållet vertikalt mitt på sidan -->
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <!-- vänster kolumn som tar upp halva bredden på medium och större skärmar -->
+          <div class="col-md-6 mt-5 mt-md">
+            <!-- innehåll för bilden -->
+            <div class="home-img text-center">
+              <!-- profilbild -->
+              <img
+                src="Images/IMG_2848.jpg"
+                alt="profile img"
+                class="rounded mw-100"
+                style="max-width: 100%; height: 500px"
+              />
+            </div>
+          </div>
+          <!-- höger kolumn som tar upp halva bredden på medium och större skärmar -->
+          <div class="col-md-6 mt-5 mt-md order-md-last">
+            <!-- Text för presentationen -->
+            <div class="home-text">
+              <!-- rubrik för titel -->
+              <h1 class="text-danger text-uppercase fs-1 fw-bold">
+                Webbmaestro
+              </h1>
+              <!-- underrubrik för ditt namn -->
+              <h2 class="fs-4">Hamdi Kantarci</h2>
+              <!-- beskrivningstext -->
+              <p class="mt-4 text-muted">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                consequuntur earum voluptatem facilis.
+              </p>
+              <!-- länk till portfolio sidan -->
+              <a href="portfolio.html" class="btn btn-dark px-3 mt-3"
+                >My work</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slut på home-sektionen -->
+
+    <!-- om mig sektionen börjar-->
+    <section class="about bg-white py-5" id="about">
+      <!-- behållare -->
+      <div class="container-lg py-4">
+        <!-- rad för att centrera rubriken -->
+        <div class="row justify-content-center">
+          <!-- kolumn rubriken i innehåll -->
+          <div class="col-lg-8">
+            <!-- rubrik tii about me -->
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-4">About Me</h2>
+            </div>
+          </div>
+        </div>
+        <!-- rad för att centrera innehållet -->
+        <div class="row justify-content-center">
+          <!-- kolumn för innehåll av text och länkar -->
+          <div class="col-md-8">
+            <!-- Text för om mig-->
+            <div class="About-text text-center">
+              <!-- rubrik för om mig-sektionen -->
+              <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
+              <!-- pragraf text för beskrivningen -->
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!-- rad för att placera knappen och sociala länkar -->
+            <div class="row justify-content-center">
+              <!-- kolumn för innehåll av knappen och sociala länkar -->
+              <div class="col-lg-8 text-center py-5">
+                <!-- knapp utan aktiv länk för att ladda ner CV -->
+                <a href="#" class="btn btn-danger btn-lg mb-4">Download CV </a>
+                <!-- sociala länkar, inte aktiva, mer för syns skull-->
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-x-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--om mig sektionen slutar -->
+
+    <!-- Fotern börjar här -->
+    <footer class="footer border-top py-4">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!-- En kolumn som tar upp åtta/tolv kolumner i större skärmlägen -->
+          <div class="col-lg-8 text-center py-3">
+            <!-- Text som visar upphovsrätt -->
+            <p>&copy; 2024 Opus Repository - All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fotern slutar här -->
+
+    <!-- JavaScript och jQuery -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Länken till Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <title>Examination 3</title>
+  </head>
+
+  <!-- Början på body-elementet, jag har tilldelat klassen bg-light för bakgrundsfärgen. -->
+  <body class="bg-light">
+    <!-- Navbar börjar -->
+
+    <!-- Fixed-top gör att navbaren är fast på toppen av fönstret när man scrollar -->
+    <!-- shadow-sm ger en liten skugg effekt på navbaren -->
+    <nav class="navbar fixed-top shadow-sm">
+      <!-- Behållare -->
+      <div class="container-lg">
+        <!-- Länk till loggan som tar dig till första sidan. -->
+        <a class="navbar-brand" href="index.html">
+          <!-- Länk till loggan -->
+          <img src="/Images/logga.png" alt="logo" class="img-fluid logo-img" />
+        </a>
+
+        <!--Dropdown menyn börjar-->
+        <div class="dropdown dropdown-center">
+          <!-- Knapp för att öppna dropdown menyn -->
+          <!-- btn definierar en knapp, "btn-secondary" och "btn-dark" skapar stil för knappen -->
+          <button
+            class="btn btn-secondary dropdown-toggle btn-dark"
+            type="button"
+            data-bs-auto-close="outside"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <!-- Ikonen som visas på knappen, en så kallad hamburgarmeny från Font Awesome -->
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Lista som innehåller dom olika sidorna i dropdown-menyn -->
+          <ul class="dropdown-menu">
+            <!-- Ett alternativ för att navigera till startsidan -->
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <!-- Ett alternativ för att navigera till avsnittet "About" på startsidan -->
+            <li><a class="dropdown-item" href="index.html#about">About</a></li>
+
+            <!-- Undermeny eller dropdown-submenu som innehåller fler alternativ -->
+            <li class="dropdown-submenu">
+              <!-- En knapp som agerar rubrik för undermenyn -->
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                >More</a
+              >
+              <!-- Lista med sidor för undermenyn -->
+              <ul class="dropdown-menu">
+                <!-- Alternativ för tjänster -->
+                <li>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                </li>
+                <!-- Alternativ för portfölj -->
+                <li>
+                  <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                </li>
+                <!-- Alternativ kontakt -->
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--Dropdown menyn slutar-->
+      </div>
+    </nav>
+
+    <!--Navbar slutar-->
+
+    <!-- Home-sektionen med formulär börjar här -->
+
+    <section class="home py-5" id="home">
+      <div class="container-fluid">
+        <!-- En rad som anpassar vertikalt innehållet mitt på sidan -->
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <!-- En kolumn som tar halva bredden på större skärmar och hela bredden på mindre skärmar -->
+          <div class="col-md-5 mt-5 mt-md mx-auto">
+            <!-- En rad för att justeraa innehålk i mitten horisontellt -->
+            <div class="row justify-content-center">
+              <!-- Kontaktformulärret -->
+              <section id="contact" class="py-5">
+                <!-- En behållare för att begränsa bredden på formuläret -->
+                <div class="container">
+                  <!-- Rubrik för kontaktformuläret -->
+                  <h2 class="text-center mb-4">Contact me</h2>
+                  <!-- En rad för att justera innehållet horisontellt mitt på sidan -->
+                  <div class="row justify-content-center">
+                    <!-- En kolumn för att placera kontaktformuläret -->
+                    <div class="col-md-6">
+                      <form>
+                        <!-- Fält för användarens namn -->
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Your name"
+                            required
+                          />
+                        </div>
+                        <!-- Fält för användarens e-postadress -->
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Your email"
+                            required
+                          />
+                        </div>
+                        <!-- Fält för användarens meddelande -->
+                        <div class="mb-3">
+                          <label for="message" class="form-label"
+                            >Message</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="message"
+                            rows="5"
+                            placeholder="Write down your message here"
+                            required
+                          ></textarea>
+                        </div>
+                        <!-- Knapp för att skicka formuläret -->
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-lg btn-block"
+                        >
+                          Let the magic happen
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Slut på kontaktformuläret -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Home sektionen med formulär slutar här-->
+
+    <!-- Fotern börjar här -->
+    <footer class="footer border-top py-4">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!-- En kolumn som tar upp åtta/tolv kolumner i större skärmlägen -->
+          <div class="col-lg-8 text-center py-3">
+            <!-- Text som visar upphovsrätt -->
+            <p>&copy; 2024 Opus Repository - All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fotern slutar här -->
+
+    <!-- JavaScript och jQuery -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

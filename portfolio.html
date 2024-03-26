@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Länken till Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <title>Examination 3</title>
+  </head>
+  <!-- Början på body-elementet, jag har tilldelat klassen bg-light för bakgrundsfärgen. -->
+  <body class="bg-light">
+    <!-- Navbar börjar -->
+
+    <!-- Fixed-top gör att navbaren är fast på toppen av fönstret när man scrollar -->
+    <!-- shadow-sm ger en liten skugg effekt på navbaren -->
+    <nav class="navbar fixed-top shadow-sm">
+      <!-- Behållare -->
+      <div class="container-lg">
+        <!-- Länk till loggan som tar dig till första sidan. -->
+        <a class="navbar-brand" href="index.html">
+          <!-- Länk till loggan -->
+          <img src="/Images/logga.png" alt="logo" class="img-fluid logo-img" />
+        </a>
+
+        <!--Dropdown menyn börjar-->
+        <div class="dropdown dropdown-center">
+          <!-- Knapp för att öppna dropdown menyn -->
+          <!-- btn definierar en knapp, "btn-secondary" och "btn-dark" skapar stil för knappen -->
+          <button
+            class="btn btn-secondary dropdown-toggle btn-dark"
+            type="button"
+            data-bs-auto-close="outside"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <!-- Ikonen som visas på knappen, en så kallad hamburgarmeny från Font Awesome -->
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Lista som innehåller dom olika sidorna i dropdown-menyn -->
+          <ul class="dropdown-menu">
+            <!-- Ett alternativ för att navigera till startsidan -->
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <!-- Ett alternativ för att navigera till avsnittet "About" på startsidan -->
+            <li><a class="dropdown-item" href="index.html#about">About</a></li>
+
+            <!-- Undermeny eller dropdown-submenu som innehåller fler alternativ -->
+            <li class="dropdown-submenu">
+              <!-- En knapp som agerar rubrik för undermenyn -->
+              <a
+                class="dropdown-item dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                >More</a
+              >
+              <!-- Lista med sidor för undermenyn -->
+              <ul class="dropdown-menu">
+                <!-- Alternativ för tjänster -->
+                <li>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                </li>
+                <!-- Alternativ för portfölj -->
+                <li>
+                  <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                </li>
+                <!-- Alternativ kontakt -->
+                <li>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--Dropdown menyn slutar-->
+      </div>
+    </nav>
+
+    <!--Navbar slutar-->
+
+    <!-- sektionen med image caps börjar här -->
+    <section class="home py-5" id="home">
+      <!-- behållare -->
+      <div class="container-fluid">
+        <!-- rad för att anpassa innehållet vertikalt mitt på sidan -->
+        <div class="row min-vh-100 align-items-center align-content-center">
+          <!-- kolumn som tar halva bredden på större skärmar och hela bredden på mindre skärmar -->
+          <div class="col-md-5 mt-5 mt-md mx-auto">
+            <!-- rad för att justera innehållet horisontellt -->
+            <div class="row justify-content-center">
+              <!-- första kortet -->
+              <div class="card mb-4">
+                <!-- bild för kortet -->
+                <img
+                  src="Images/erik-mclean-tNO5weLNt-E-unsplash.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <!-- innehåll för kortet -->
+                <div class="card-body mt-3">
+                  <!-- rubrik för kortet -->
+                  <h5 class="card-title">COMING SOON</h5>
+                  <!-- text för kortet -->
+                  <p class="card-text">Let's enjoy this picture for a while</p>
+                  <!-- mer text för kortet -->
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 10 mins ago</small
+                    >
+                  </p>
+                </div>
+              </div>
+              <!-- andra kortet -->
+              <div class="card">
+                <!-- innehåll för kortet -->
+                <div class="card-body">
+                  <!-- rubrik för kortet -->
+                  <h5 class="card-title">COMING SOON</h5>
+                  <!-- text för kortet -->
+                  <p class="card-text">Temporary shortage of Images</p>
+                  <!-- mer text för kortet -->
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 10 mins ago</small
+                    >
+                  </p>
+                </div>
+                <!-- bild för kortet -->
+                <img
+                  src="Images/erik-mclean-tNO5weLNt-E-unsplash.jpg"
+                  class="card-img-bottom"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slut på home-sektionen med image caps -->
+
+    <!-- Fotern börjar här -->
+    <footer class="footer border-top py-4">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!-- En kolumn som tar upp åtta/tolv kolumner i större skärmlägen -->
+          <div class="col-lg-8 text-center py-3">
+            <!-- Text som visar upphovsrätt -->
+            <p>&copy; 2024 Opus Repository - All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fotern slutar här -->
+
+    <!-- JavaScript och jQuery -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

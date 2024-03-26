@@ -1,0 +1,18 @@
+/* CSS reset enkel */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Logotyp storlek */
+.logo-img {
+  max-height: 120px; /* Ställ in maxhöjd för bilden */
+}
+
+/* Egen specifik färg för navbar */
+
+.navbar {
+  background-color: #d4dfc7;
+}
